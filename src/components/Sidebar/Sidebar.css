@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+.sidebar{
+    font-family:"Ubuntu",sans-serif;
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(179, 181, 184);
+    padding:25px 15px;
+}
+
+.sidebar img{
+    width: 20px;
+}
+
+.sidebar .menu{
+    display:block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat{
+    margin-top: 50px;
+    display:inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding:10px 15px;
+    background-color: rgb(161, 163, 166);
+    border-radius:30px;
+    color:rgb(29, 29, 29);
+    cursor:pointer;
+}
+
+.sidebar .recent{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    animation: fadeIn 1.0s ease-in-out;
+}
+
+.sidebar .recent-title{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry, .bottom-item{
+    display:flex;
+    gap:10px;
+    align-items: start;
+    padding: 10px;
+    padding-right:40px;
+    border-radius:50px;
+    color:rgb(51, 50, 48);
+    cursor: pointer;
+}
+
+.bottom-item:hover, .sidebar .recent-entry:hover{
+    background-color: rgb(102, 102, 105);
+    color:black;
+}
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction:column;
+}
+
+.sidebar .bottom-items{
+    padding-right:10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+}
