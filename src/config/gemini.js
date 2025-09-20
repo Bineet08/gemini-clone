@@ -1,7 +1,7 @@
-const apiKey = "AIzaSyDbTd4WP2_pjDwS5WXhk7hGs9OnqQpD4Kc";
+const apiKey = "";
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyDbTd4WP2_pjDwS5WXhk7hGs9OnqQpD4Kc" });
+const ai = new GoogleGenAI({ apiKey: "" });
 
 async function mainR(prompt) {
   const response = await ai.models.generateContent({
